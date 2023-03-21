@@ -1,0 +1,71 @@
+.hero {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20vw 20px 20px 20px;
+
+  
+  &__mac {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5vw;
+    top: 10vw;
+    &__blur {
+      position: absolute;
+      background-color: #556B6A;
+      filter: blur(60.5px);
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+    }
+    img {
+      width: 300px;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    &__mac {
+      display: none;
+    }
+  }
+
+  &__intro {
+    color: var(--font-light);
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__name {
+    margin-top: 15px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 53px;
+    letter-spacing: 0.045em;
+    text-transform: uppercase;
+  }
+  
+  &__title {
+    margin-top: 5px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 53px;
+    color: var(--font-dark1);
+  }
+
+  &__summary {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.035em;
+    max-width: 700px;
+    color: var(--font-dark2);
+  }
+  button {
+    margin-top: clamp(30px, 50px, 6vw);
+  }
+}
