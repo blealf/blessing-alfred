@@ -3,6 +3,7 @@ import Nav from './components/Nav/Nav'
 import SocialNav from './components/Nav/SocialNav'
 import EmailNav from './components/Nav/EmailNav'
 import Hero from './components/Hero/Hero'
+import About from './components/About/About'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <EmailNav />
       <Nav />
       <Hero />
+      <About />
     </div>
   )
 }

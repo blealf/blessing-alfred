@@ -1,0 +1,56 @@
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 10px;
+  &__left {
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      color: var(--font-dark2);
+      letter-spacing: 0.03em;
+    }
+  }
+  &__right {
+    position: relative;
+    max-width: 300px;
+    margin-left: auto;
+    img {
+      position: relative;
+      margin-top: 50px;
+      width: 300px;
+      height: 330px;
+      border-radius: 10px;
+      z-index: 10;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      right: -10px;
+      width: 300px;
+      height: 330px;
+      border-radius: 10px;
+      border: 1px solid var(--font-light);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 330px;
+      background: teal;
+      z-index: 99;
+      opacity: 0.2;
+      margin-top: 50px;
+      border-radius: 10px;
+    }
+  }
+}
