@@ -4,7 +4,7 @@ import './Contact.scss'
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <Heading title="Contact." both={true} />
       <h2>Get In Touch</h2>
       <button>Contact Me</button>

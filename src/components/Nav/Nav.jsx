@@ -4,21 +4,23 @@ import logo from '../../assets/logo.svg'
 
 const Nav = () => {
   const navItems = [
-    { name: 'About', link: '/' },
-    { name: 'Experience', link: '/' },
-    { name: 'Work', link: '/' },
-    { name: 'Contact', link: '/' },
+    { name: 'About', link: '#about' },
+    { name: 'Experience', link: '#experience' },
+    { name: 'Work', link: '#work' },
+    { name: 'Contact', link: '#contact' },
   ]
 
   return (
     <div className="nav-wrapper">
-        <div className="nav-item logo">
+        <div className="logo">
           <img src={logo} alt="logo" />
         </div>
       <div className="nav-items">
         {navItems
           .map(
-            item => <div className="nav-item">{item.name}</div>
+            item => <div className="nav-item">
+              <a href={item.link}>{item.name}</a>
+            </div>
           )}
         <button>Resume</button>
       </div>

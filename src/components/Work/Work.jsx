@@ -11,7 +11,7 @@ const Work = () => {
   }
   const work = [1,2,3]
   return (
-    <div className="work">
+    <div id="work" className="work">
       <Heading title="Work." />
         {work.map((item, index) => {
           return (

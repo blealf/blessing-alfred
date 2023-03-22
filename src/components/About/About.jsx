@@ -5,7 +5,7 @@ import blessing from '../../assets/blessing.png'
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <Heading title="About Me." />
       <section className="about-section">
         <div className="about-section__left">

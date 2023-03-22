@@ -22,7 +22,7 @@ const Experience = () => {
   }
   
   return (
-    <div className="experience">
+    <div id="experience" className="experience">
       <Heading title="Experience." />
       <div className="experience__divider">
         <Company
