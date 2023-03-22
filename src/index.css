@@ -21,6 +21,10 @@
   --font-dark2: #999999;
 }
 
+html {
+  scroll-behaviour: smooth;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
