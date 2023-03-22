@@ -1,19 +1,22 @@
-.about {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .about-section {
   display: grid;
   grid-template-columns: 1fr 320px;
   gap: 10px;
+  color: var(--font-dark2);
   &__left {
     p {
       font-size: 14px;
       line-height: 22px;
-      color: var(--font-dark2);
       letter-spacing: 0.03em;
+    }
+    .skills {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        margin-top: 5px;
+        list-style-image: url('../../assets/list.svg');
+      }
     }
   }
   &__right {

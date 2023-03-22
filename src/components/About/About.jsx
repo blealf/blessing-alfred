@@ -25,6 +25,20 @@ const About = () => {
             I am proficient in a range of programming languages and tools:
             <br />
           </p>
+          <div className="skills">
+            <ul>
+              <li>Javascript</li>
+              <li>Vue</li>
+              <li>Figma</li>
+              <li>React</li>
+            </ul>
+            <ul>
+              <li>HTML & CSS</li>
+              <li>Git</li>
+              <li>Typescript</li>
+              <li>Ruby on Rails</li>
+            </ul>
+          </div>
         </div>
         <div className="about-section__right">
           <img src={blessing} alt="blessing" />

@@ -1,0 +1,21 @@
+.contact {
+  padding-top: 10vw;
+  text-align: center;
+  h2 {
+    font-size: 60px;
+    line-height: 74px;
+    text-transform: uppercase;
+    color: var(--font-dark1);
+  }
+  button {
+    text-transform: none;
+    width: 200px;
+    height: 50px;
+    margin-top: 6vw;
+  }
+  p {
+    color: var(--font-dark1);
+    margin: 5px;
+    &:first-of-type {margin-top: 15vw;}
+  }
+}

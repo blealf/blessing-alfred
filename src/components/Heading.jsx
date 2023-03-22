@@ -13,7 +13,7 @@ const Title = styled.h1`
   font-size: 36px;
   font-weight: 600px;
   line-height: 48px;
-  margin-right: 10px;
+  margin: 20px 10px;
 `
 
 const Divider = styled.div`
@@ -22,9 +22,10 @@ const Divider = styled.div`
   background: #15e1d5;
 `
 
-const Heading = ({ title }) => {
+const Heading = ({ title, both }) => {
   return (
     <HeadingWrapper>
+      {both ? <Divider></Divider> : ''}
       <Title>{ title || 'Title.'}</Title>
       <Divider></Divider>
     </HeadingWrapper>

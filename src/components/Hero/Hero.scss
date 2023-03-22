@@ -1,8 +1,6 @@
 .hero {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20vw 20px 20px 20px;
-  height: clamp(50vh, 65vh, 70vh);
+  padding-top: 20vw;
+  min-height: clamp(55vh, 65vh, 70vh);
   
   &__mac {
     border-radius: 50%;
