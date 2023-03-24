@@ -15,7 +15,7 @@ const Work = () => {
       <Heading title="Work." />
         {work.map((item, index) => {
           return (
-            <div className="work_wrapper">
+            <div key={item} className="work_wrapper">
               <div className="image" style={{
                 marginLeft: willFloatRight(index) ? '' : 'auto'
               }}></div>
@@ -29,7 +29,7 @@ const Work = () => {
                   A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.
                 </div>
                 <div className="tags">
-                  {tags.map(tag => <span>{tag}</span>)}
+                  {tags.map(tag => <span key={tag}>{tag}</span>)}
                 </div>
                 <div className="icons">
                   <a href="https://github.com" target="_blank">

@@ -4,3 +4,9 @@
 .App {
   position: relative;
 }
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}

@@ -17,7 +17,7 @@ const SocialNav = () => {
       <div className="nav-social">
         {SocialNavItems.map(item => {
           return (
-            <a href="https://google.com" target="_blank">
+            <a href="https://google.com" target="_blank" key={item.name}>
               <img src={item.path} alt={item.name} />
             </a>
           )

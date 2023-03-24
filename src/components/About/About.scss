@@ -28,8 +28,8 @@
       margin-top: 50px;
       width: 300px;
       height: 330px;
-      border-radius: 10px;
-      z-index: 10;
+      border-radius: 1px;
+      z-index: 1;
     }
     &::before {
       content: '';
@@ -38,7 +38,7 @@
       right: -10px;
       width: 300px;
       height: 330px;
-      border-radius: 10px;
+      border-radius: 1px;
       border: 1px solid var(--font-light);
     }
     &::after {
@@ -53,7 +53,7 @@
       z-index: 99;
       opacity: 0.2;
       margin-top: 50px;
-      border-radius: 10px;
+      border-radius: 1px;
     }
   }
 }
