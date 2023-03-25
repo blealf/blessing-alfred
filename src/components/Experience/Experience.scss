@@ -1,9 +1,14 @@
+@import '../../main.scss';
 .experience {
   padding-top: 10vw;
   &__divider {
     display: grid;
     grid-template-columns: 150px 1fr;
+    @include breakpoint('md') {
+      grid-template-columns: 1fr;
+    }
   }
+
   &__details {
     border: 1px solid #313131;
     border-radius: 5px;
@@ -35,7 +40,13 @@
   }
 }
 
-
+.company-wrapper {
+  display: flex;
+  @include breakpoint('md') {
+    display: flex;
+    overflow: scroll;
+  }
+}
 
 .company {
   display: flex;
@@ -50,7 +61,7 @@
     line-height: 26px;
     cursor: pointer;
     transition: color 0.5s, transform 0.5s ease-in-out;
-    
+
     &:hover {
       color: var(--font-light-alt);
       transform: translateY(-20%);
@@ -58,8 +69,25 @@
   }
   .active-company {
     border-left: 2px solid var(--font-light);
+    border-bottom: 2px solid transparent;
     &:hover {
       border-left: 1px solid var(--font-light-alt);
+    }
+  }
+  @include breakpoint('md') {
+    flex-direction: row;
+    p {
+      font-size: 18px;
+      text-align: center;
+      line-height: 20px;
+      padding: 5px 8px;
+    }
+    .active-company {
+      border-left: none;
+      border-bottom: 2px solid var(--font-light);
+      &:hover {
+        border-left: none;
+      }
     }
   }
 }

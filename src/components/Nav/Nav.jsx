@@ -2,7 +2,7 @@ import React from 'react'
 import './Nav.scss'
 import logo from '../../assets/logo.svg'
 
-const Nav = () => {
+const Nav = ({ resumeDownload }) => {
   const navItems = [
     { name: 'About', link: 'about' },
     { name: 'Experience', link: 'experience' },
@@ -40,7 +40,7 @@ const Nav = () => {
                 </div>
             )
           )}
-        <button>Resume</button>
+        <button onClick={() => resumeDownload()}>Resume</button>
       </div>
     </div>
   )

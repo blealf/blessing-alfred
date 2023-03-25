@@ -2,7 +2,7 @@ import React from 'react'
 import './Hero.scss'
 import mac from '../../assets/hero/mac.svg'
 
-const Hero = () => {
+const Hero = ({ resumeDownload }) => {
   return (
     <div className="hero">
       <div className="hero__mac">
@@ -18,7 +18,7 @@ const Hero = () => {
         Currently, I’m focused on building accessible, human-centred products 
         at Glover.
       </div>
-      <button>Check my Resume</button>
+      <button onClick={() => resumeDownload()}>Check my Resume</button>
     </div>
   )
 }

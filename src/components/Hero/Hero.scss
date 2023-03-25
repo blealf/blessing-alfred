@@ -1,6 +1,10 @@
+@import '../../main.scss';
 .hero {
   padding-top: 25vw;
   min-height: clamp(55vh, 65vh, 70vh);
+  @include breakpoint('md') {
+    //text-align: center;
+  }
   
   &__mac {
     border-radius: 50%;

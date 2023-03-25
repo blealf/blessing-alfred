@@ -1,0 +1,35 @@
+$xs: 320px;
+$sm: 600px;
+$md: 768px;
+$lg: 900px;
+$xl: 1024px;
+
+
+@mixin breakpoint($value) {
+
+  @if $value == "xs" {
+    @media screen and (max-width: $xs) {
+      @content
+    }
+  }
+  @if $value == "sm" {
+    @media screen and (max-width: $sm) {
+      @content
+    }
+  }
+  @if $value == "md" {
+    @media screen and (max-width: $md) {
+      @content
+    }
+  }
+  @if $value == "lg" {
+    @media screen and (max-width: $lg) {
+      @content
+    }
+  }
+  @if $value == "xl" {
+    @media screen and (max-width: $xl) {
+      @content
+    }
+  }
+}

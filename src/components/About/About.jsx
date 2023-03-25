@@ -10,7 +10,7 @@ const About = () => {
       <section className="about-section">
         <div className="about-section__left">
           <p>
-            Hi, my name is blessing Alfred. As a frontend developer, I am passionate about creating engaging and user-friendly digital experiences. With experience in building and designing web applications, I specialize in creating accessible, human-centered products that cater to the needs of all users. 
+            Hi, my name is Blessing Alfred. As a frontend developer, I am passionate about creating engaging and user-friendly digital experiences. With experience in building and designing web applications, I specialize in creating accessible, human-centered products that cater to the needs of all users.
             <br />
             <br />
 

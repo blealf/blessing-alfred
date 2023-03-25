@@ -25,11 +25,13 @@ const Experience = () => {
     <div id="experience" className="experience">
       <Heading title="Experience." />
       <div className="experience__divider">
-        <Company
-          companies={companies}
-          active={activeCompany}
-          setActive={setActiveCompany}
-        />
+        <div className="company-wrapper">
+          <Company
+              companies={companies}
+              active={activeCompany}
+              setActive={setActiveCompany}
+          />
+        </div>
         <div className="experience__details">
           <h2>
             {experience.title}

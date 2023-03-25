@@ -9,7 +9,7 @@ import Experience from './components/Experience/Experience'
 import Contact from './components/Contact/Contact'
 import Work from './components/Work/Work'
 import ScrollButton from "./components/Nav/ScrollButton"
-
+import resume from './assets/document/Info-for-intending-couples.pdf'
 const NavContainer = styled.div`
   position: relative;
 `
@@ -21,20 +21,27 @@ const ContentWrapper = styled.div`
   position: relative;
 `
 
-
 function App() {
+
+    const handleResumeDownload = () => {
+        setTimeout(() => {
+            window.open(resume, '_blank')
+        }, 500)
+
+    }
 
   return (
     <div className="App">
         <NavContainer>
-          <Nav />
+          <Nav resumeDownload={handleResumeDownload}/>
         </NavContainer>
       <ScrollButton />
       <SocialNav />
       <EmailNav />
         <ContentWrapper>
-          {/*<div className={'content-wrapper'}>*/}
-            <Hero />
+            {/*<input type="file" value={resume} />*/}
+            {/*<div className={'content-wrapper'}>*/}
+            <Hero resumeDownload={handleResumeDownload}/>
             <About />
             <Experience />
             <Work />
