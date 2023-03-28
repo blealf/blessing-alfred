@@ -6,8 +6,9 @@
   padding: 10px 20px;
   width: calc(100vw - 40px);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  //position: fixed;
+  position: fixed;
   background: #242424;
+  //position: relative;
 }
 .logo {
   margin-right: auto;
@@ -21,6 +22,48 @@
   margin-left: auto;
   button {
     margin-right: 2vw;
+  }
+}
+.mobile-nav {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  right: -300px;
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  z-index: 100;
+  background: #242424;
+  transition: right 0.5s ease-in-out;
+  @include breakpoint('md') {
+    display: flex;
+    .nav-item {
+      display: block;
+      padding: 10px;
+    }
+  }
+
+  button:first-of-type {
+    margin-left: auto;
+  }
+  button:last-of-type {
+    width: 100%;
+  }
+}
+.menu-toggle {
+  display: none;
+  padding: 0;
+  cursor: pointer;
+  height: 42px;
+  border: none;
+  img {
+    height: 40px;
+  }
+  @include breakpoint('md') {
+    display: block;
   }
 }
 .nav-item {

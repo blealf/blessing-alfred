@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import './Nav.scss'
 import logo from '../../assets/logo.svg'
+import menu from '../../assets/menu.svg'
 
 const Nav = ({ resumeDownload }) => {
   const navItems = [
@@ -10,6 +11,8 @@ const Nav = ({ resumeDownload }) => {
     { name: 'Contact', link: 'contact' },
   ]
 
+    const mobileNav = useRef(null)
+
   const handleScroll = (id) => {
       const element = document.getElementById(id)
       window.scrollTo({
@@ -17,6 +20,14 @@ const Nav = ({ resumeDownload }) => {
           behavior: 'smooth',
       })
   }
+
+  const handleMenuOpen = () => {
+      mobileNav.current.style.right = 0
+  }
+
+    const handleMenuClose = () => {
+      mobileNav.current.style.right = -300 + 'px';
+    }
 
   return (
     <div className="nav-wrapper">
@@ -40,8 +51,31 @@ const Nav = ({ resumeDownload }) => {
                 </div>
             )
           )}
-        <button onClick={() => resumeDownload()}>Resume</button>
+        <button onClick={resumeDownload}>Resume</button>
+        <button className="menu-toggle" onClick={handleMenuOpen}>
+            <img src={menu} alt="menu" />
+        </button>
       </div>
+        <div
+            ref={mobileNav}
+            onClick={handleMenuClose}
+            className="mobile-nav"
+        >
+            <button onClick={handleMenuClose}>X</button>
+            {navItems
+                .map(
+                    item => (
+                        <div
+                            className="nav-item"
+                            key={item.name}
+                            onClick={() => handleScroll(item.link)}
+                        >
+                            {item.name}
+                        </div>
+                    )
+                )}
+            <button onClick={() => resumeDownload()}>Resume</button>
+        </div>
     </div>
   )
 }

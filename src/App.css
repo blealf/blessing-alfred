@@ -3,6 +3,7 @@
 
 .App {
   position: relative;
+  width: calc(100vw - 5px);
 }
 .content-wrapper {
   display: grid;
