@@ -162,8 +162,7 @@
   }
 }
 
-
-@media screen and (max-width: 950px) {
+@include breakpoint('xl') {
   .email-nav, .social-nav {
     opacity: 0;
   }

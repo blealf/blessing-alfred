@@ -6,17 +6,20 @@ import EmailNav from './components/Nav/EmailNav'
 import Hero from './components/Hero/Hero'
 import About from './components/About/About'
 import Experience from './components/Experience/Experience'
-import Contact from './components/Contact/Contact'
 import Work from './components/Work/Work'
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 import ScrollButton from "./components/Nav/ScrollButton"
 import resume from './assets/document/Info-for-intending-couples.pdf'
+
+
 const NavContainer = styled.div`
   position: relative;
 `
 const ContentWrapper = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  padding: 8vw;
+  padding: 8vw 8vw 0 8vw;
   display: block;
   position: relative;
 `
@@ -46,6 +49,7 @@ function App() {
             <Experience />
             <Work />
             <Contact />
+            <Footer />
           {/*</div>*/}
         </ContentWrapper>
     </div>

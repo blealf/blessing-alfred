@@ -1,0 +1,22 @@
+@import '../../main.scss';
+.footer {
+  padding-top: 10vw;
+  text-align: center;
+
+  .social {
+    width: 200px;
+    margin: 0 auto;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @include breakpoint('xl') {
+    .social {
+      display: flex;
+    }
+  }
+
+  a {
+    color: var(--font-light);
+  }
+}
