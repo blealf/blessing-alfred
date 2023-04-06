@@ -23,7 +23,6 @@ const Work = () => {
                 alignItems: willFloatRight(index) ? 'flex-end' : 'flex-start',
                 right: willFloatRight(index) ? 0 : '',
               }}>
-                <p>Project</p>
                 <h3>{project.name}</h3>
                 <div className="description">{project.description}</div>
                 <div className="techs">

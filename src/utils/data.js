@@ -107,8 +107,7 @@ export const work = [
     name: "React Chess Game",
     description: `The Chess game displays a graphical user interface 
       with 64 squares arranged in an 8x8 grid. The game validates moves, 
-      checks for check and checkmate conditions, and updates the state of the board. 
-      Each piece has methods for validating moves and updating their position on the board.`,
+      checks for check and checkmate conditions, and updates the state of the board.`,
     techs: ['JavaScript','React','HTML & CSS'],
     github: 'https://github.com/blealf/react-chess',
     link: 'https://github.com/blealf/react-chess'
@@ -116,8 +115,7 @@ export const work = [
   {
     name: "FF Photography",
     description: `The photography web app allows users to upload, edit, 
-      and share their photos. The app provides a user-friendly interface 
-      for an online photo shop. The app stores photos securely in the cloud 
+      and share their photos. The app stores photos securely in the cloud 
       and provides easy access to them from anywhere with an internet connection.`,
     techs: ['Ruby on Rails','JavaScript','HTML & CSS', 'Postgres', 'Materialize', 'Google cloud'],
     github: 'https://github.com/blealf/flashandflick',
@@ -126,8 +124,7 @@ export const work = [
   {
     name: "Web 3 Project",
     description: `The Web3 transfer web app allows users to transfer cryptocurrencies securely 
-      on the Ethereum blockchain. Users can connect their wallets to the app and initiate 
-      transactions with a few clicks. The app provides a user-friendly interface for selecting 
+      on the Ethereum blockchain. Users can connect their wallets to the app. The app provides a user-friendly interface for selecting 
       the cryptocurrency, entering the amount, and specifying the recipient's wallet address.`,
     techs: ['Vue','Web3','HTML & CSS',],
     github: 'https://github.com/blealf/project-eth',
@@ -137,8 +134,7 @@ export const work = [
     name: "Project Database",
     description: `The student project database web app allows students and instructors to manage 
       their academic projects and associated data. Instructors can create, edit, 
-      and delete projects. The app provides a user-friendly interface for searching, filtering, 
-      and sorting project data. Students can also collaborate with instructors 
+      and delete, search and filter projects. Students can also collaborate with instructors 
       and share project updates.`,
     techs: ['Ruby on Rails','JavaScript','HTML & CSS', 'bootstrap', 'Postgres'],
     github: 'https://github.com/blealf/ProjectSearch',
