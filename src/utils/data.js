@@ -124,6 +124,16 @@ export const work = [
     link: 'https://github.com/blealf/flashandflick'
   },
   {
+    name: "Web 3 Project",
+    description: `The Web3 transfer web app allows users to transfer cryptocurrencies securely 
+      on the Ethereum blockchain. Users can connect their wallets to the app and initiate 
+      transactions with a few clicks. The app provides a user-friendly interface for selecting 
+      the cryptocurrency, entering the amount, and specifying the recipient's wallet address.`,
+    techs: ['Vue','Web3','HTML & CSS',],
+    github: 'https://github.com/blealf/project-eth',
+    link: 'https://project-eth.netlify.app/'
+  },
+  {
     name: "Project Database",
     description: `The student project database web app allows students and instructors to manage 
       their academic projects and associated data. Instructors can create, edit, 
