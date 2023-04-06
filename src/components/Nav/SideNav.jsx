@@ -1,21 +1,13 @@
-import React from 'react'
-import github from '../../assets/nav/github.svg'
-import twitter from '../../assets/nav/twitter.svg'
-import linkedin from '../../assets/nav/linkedin.svg'
-import instagram from '../../assets/nav/instagram.svg'
+import React, {useContext} from 'react'
+import {DataContext} from "../../App.jsx";
 
 const SideNav = () => {
-  const sideNavItems = [
-    { name: 'github', path: github },
-    { name: 'twitter', path: twitter },
-    { name: 'linkedin', path: linkedin },
-    { name: 'instagram', path: instagram }
-  ]
+    const data = useContext(DataContext)
   return (
     <div className="side-nav">
       <div className="side-nav__left">
         <div className="nav-social">
-          {sideNavItems.map(item => {
+          {data.socialIcons.map(item => {
             return (
               <a href="https://google.com" target="_blank">
                 <img src={item.path} alt={item.name} />
@@ -26,7 +18,7 @@ const SideNav = () => {
         </div>
       </div>
       <div className="side-nav__right">
-        <p><a href="mailto:blealf@gmail.com">blealf@gmail.com</a></p>
+        <p><a href={`mailto:${data.email}`}>{data.email}</a></p>
         <div className="vertical-divider"></div>
       </div>
     </div>

@@ -16,13 +16,18 @@
     }
     p {
       font-size: 16px;
-      line-height: 22px;
+      line-height: 24px;
       letter-spacing: 0.03em;
+      padding-bottom: 10px;
     }
     .skills {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
       li {
         margin-top: 5px;
         list-style-image: url('../../assets/list.svg');

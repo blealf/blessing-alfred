@@ -1,3 +1,54 @@
+import github from "../assets/nav/github.svg";
+import twitter from "../assets/nav/twitter.svg";
+import linkedin from "../assets/nav/linkedin.svg";
+import instagram from "../assets/nav/instagram.svg";
+
+export const socialIcons = [
+  { name: 'github', path: github, link: 'https://github.com/' },
+  { name: 'twitter', path: twitter, link: 'https://twitter.com/' },
+  { name: 'linkedin', path: linkedin, link: 'https://linkedin.com/' },
+  { name: 'instagram', path: instagram, link: 'https://instagram.com' }
+]
+
+export const email = 'blealf@gmail.com'
+
+export const hero = {
+  greeting: 'Hi, my name is',
+  fullname: 'Blessing Alfred',
+  title: 'I am a frontend developer',
+  summary: `I'm a frontend developer with a passion for creating engaging 
+      and user-friendly digital experiences. I deliver high-quality products
+      that exceed user expectations using the latest web technologies. 
+      Currently, I’m focused on building accessible, human-centred products at Glover.`
+}
+
+export const about = {
+  summary: [
+      `Hi, my name is Blessing Alfred. As a frontend developer, 
+      I am passionate about creating engaging and user-friendly digital experiences. 
+      With experience in building and designing web applications, 
+      I specialize in creating accessible, human-centered products that cater to the 
+      needs of all users.`,
+
+      `In my career, I have collaborated with designers, project managers,
+      and other developers to deliver high-quality products that meet
+      client requirements and exceed user expectations. As a self-motivated learner, 
+      I am committed to staying up to date with the latest web development trends
+      and technologies to continuously improve my skills and deliver cutting-edge products.`,
+
+      `I am proficient in a range of programming languages and tools:`
+    ],
+    skills: [
+        'JavaScript',
+        'HTML & CSS',
+        'Vue',
+        'Git',
+        'Figma',
+        'Typescript',
+        'React',
+        // 'Ruby on Rails'
+    ]
+}
 export const experiences = [
   {
     title: 'Front-end Engineer',
@@ -6,13 +57,9 @@ export const experiences = [
     date: 'June 2022 - Present',
     responsibilities: [
       'Collaborating with designers, developers, and other stakeholders to ensure effective and efficient implementation of user interface designs.',
-    
       'Building responsive and cross- browser compatible websites that can be accessed on different devices and platforms.',
-        
       'Implementing best practices for web development, such as optimizing code for performance, accessibility, and search engine optimization(SEO).',
-
       'Creating and maintaining reusable code libraries and templates to improve productivity and consistency across projects.',
-
       'Participating in code reviews, sprint planning, and other team activities to ensure quality and timely delivery of projects.',
     ]
   },
@@ -52,5 +99,39 @@ export const experiences = [
       'Researched models to predict vegetation cover of an area in Leicester, England, UK.',
       'Data preparation, sampling, loading and processing using MATLAB and Python.',
     ]
+  }
+]
+
+export const work = [
+  {
+    name: "React Chess Game",
+    description: `The Chess game displays a graphical user interface 
+      with 64 squares arranged in an 8x8 grid. The game validates moves, 
+      checks for check and checkmate conditions, and updates the state of the board. 
+      Each piece has methods for validating moves and updating their position on the board.`,
+    techs: ['JavaScript','React','HTML & CSS'],
+    github: 'https://github.com/blealf/react-chess',
+    link: 'https://github.com/blealf/react-chess'
+  },
+  {
+    name: "FF Photography",
+    description: `The photography web app allows users to upload, edit, 
+      and share their photos. The app provides a user-friendly interface 
+      for an online photo shop. The app stores photos securely in the cloud 
+      and provides easy access to them from anywhere with an internet connection.`,
+    techs: ['Ruby on Rails','JavaScript','HTML & CSS', 'Postgres', 'Materialize', 'Google cloud'],
+    github: 'https://github.com/blealf/flashandflick',
+    link: 'https://github.com/blealf/flashandflick'
+  },
+  {
+    name: "Project Database",
+    description: `The student project database web app allows students and instructors to manage 
+      their academic projects and associated data. Instructors can create, edit, 
+      and delete projects. The app provides a user-friendly interface for searching, filtering, 
+      and sorting project data. Students can also collaborate with instructors 
+      and share project updates.`,
+    techs: ['Ruby on Rails','JavaScript','HTML & CSS', 'bootstrap', 'Postgres'],
+    github: 'https://github.com/blealf/ProjectSearch',
+    link: 'https://github.com/blealf/ProjectSearch'
   }
 ]

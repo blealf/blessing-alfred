@@ -1,21 +1,13 @@
-import React from 'react'
-import github from '../../assets/nav/github.svg'
-import twitter from '../../assets/nav/twitter.svg'
-import linkedin from '../../assets/nav/linkedin.svg'
-import instagram from '../../assets/nav/instagram.svg'
+import React, {useContext} from 'react'
 import './Nav.scss'
+import {DataContext} from "../../App.jsx";
 
 const SocialNav = () => {
-  const SocialNavItems = [
-    { name: 'github', path: github },
-    { name: 'twitter', path: twitter },
-    { name: 'linkedin', path: linkedin },
-    { name: 'instagram', path: instagram }
-  ]
+  const data = useContext(DataContext)
   return (
     <div className="social-nav">
       <div className="nav-social">
-        {SocialNavItems.map(item => {
+        {data.socialIcons.map(item => {
           return (
             <a href="https://google.com" target="_blank" key={item.name}>
               <img src={item.path} alt={item.name} />

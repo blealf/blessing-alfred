@@ -1,3 +1,4 @@
+import { createContext } from "react";
 import './App.css'
 import styled from 'styled-components'
 import Nav from './components/Nav/Nav'
@@ -11,7 +12,7 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import ScrollButton from "./components/Nav/ScrollButton"
 import resume from './assets/document/Info-for-intending-couples.pdf'
-
+import { email, socialIcons } from "./utils/data.js"
 
 const NavContainer = styled.div`
   position: relative;
@@ -24,6 +25,8 @@ const ContentWrapper = styled.div`
   position: relative;
 `
 
+export const DataContext = createContext({})
+
 function App() {
 
     const handleResumeDownload = () => {
@@ -33,26 +36,29 @@ function App() {
 
     }
 
+
   return (
-    <div className="App">
-        <NavContainer>
-          <Nav resumeDownload={handleResumeDownload}/>
-        </NavContainer>
-      <ScrollButton />
-      <SocialNav />
-      <EmailNav />
-        <ContentWrapper>
-            {/*<input type="file" value={resume} />*/}
-            {/*<div className={'content-wrapper'}>*/}
-            <Hero resumeDownload={handleResumeDownload}/>
-            <About />
-            <Experience />
-            <Work />
-            <Contact />
-            <Footer />
-          {/*</div>*/}
-        </ContentWrapper>
-    </div>
+      <DataContext.Provider value={{email, socialIcons}}>
+        <div className="App">
+            <NavContainer>
+              <Nav resumeDownload={handleResumeDownload}/>
+            </NavContainer>
+          <ScrollButton />
+          <SocialNav />
+          <EmailNav />
+            <ContentWrapper>
+                {/*<input type="file" value={resume} />*/}
+                {/*<div className={'content-wrapper'}>*/}
+                <Hero resumeDownload={handleResumeDownload}/>
+                <About />
+                <Experience />
+                <Work />
+                <Contact />
+                <Footer />
+              {/*</div>*/}
+            </ContentWrapper>
+        </div>
+      </DataContext.Provider>
   )
 }
 
