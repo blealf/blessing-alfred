@@ -11,7 +11,7 @@ import Work from './components/Work/Work'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import ScrollButton from "./components/Nav/ScrollButton"
-import resume from './assets/document/Info-for-intending-couples.pdf'
+import resume from './assets/document/Resume.pdf'
 import { email, socialIcons } from "./utils/data.js"
 
 const NavContainer = styled.div`
