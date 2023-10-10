@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import './Nav.scss'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo_new.svg'
 import menu from '../../assets/menu.svg'
 
 const Nav = ({ resumeDownload }) => {
@@ -36,7 +36,7 @@ const Nav = ({ resumeDownload }) => {
             id="logo"
             onClick={() => handleScroll("logo")}
         >
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" width="30" />
         </div>
       <div className="nav-items">
         {navItems

@@ -24,7 +24,7 @@ const Work = () => {
                 right: willFloatRight(index) ? 0 : '',
               }}>
                 <h3>{project.name}</h3>
-                <div className="description">{project.description}</div>
+                <p className="description">{project.description}</p>
                 <div className="techs">
                   {project.techs.join(', ')}
                 </div>

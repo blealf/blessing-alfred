@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap");
-
+ @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Bubblegum+Sans&family=Finger+Paint&family=Fresca&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Yantramanav:wght@100;300;400&display=swap');
 :root {
-  font-family: "Jetbrains Mono", Inter, system-ui, Avenir, Helvetica, Arial,
-    sans-serif;
+  /* font-family: "Jetbrains Mono", Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif; */
+  font-family: 'Fresca', sans-serif;
+  /* font-family: 'Finger Paint', cursive; */
+  /* font-family: 'Aclonica', sans-serif; */
+  /* font-family: 'Acme', sans-serif; */
+  /* font-family: 'Bubblegum Sans', cursive; */
+  /* font-family: 'Urbanist', sans-serif; */
+  /* font-family: 'Yantramanav', sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,7 +23,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --font-light: #15e1d5;
+  /* --font-light: #15E1D5; */
+  --font-light: #15E1D5;
   --font-light-alt: #646cff;
   --font-dark1: #b1b1b1;
   --font-dark2: #999999;
@@ -36,6 +44,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  background: url('~/assets/images/code1.jpg') no-repeat center;
 }
 
 h1 {
@@ -61,6 +70,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+p, li {
+  font-size: 20px !important;
 }
 
 @media (prefers-color-scheme: light) {

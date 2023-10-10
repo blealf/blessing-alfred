@@ -19,7 +19,7 @@ const Title = styled.h1`
 const Divider = styled.div`
   flex-grow: 1;
   height: 1px;
-  background: #15e1d5;
+  background: #15E1D5;
 `
 
 const Heading = ({ title, both }) => {
