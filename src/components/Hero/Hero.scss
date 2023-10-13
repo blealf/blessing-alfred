@@ -1,8 +1,8 @@
 @import '../../main.scss';
 .hero {
   padding-top: 15vw;
-  min-height: clamp(45vh, 50vh, 60vh);
-  border-bottom: 0.5px solid var(--font-light);
+  // min-height: clamp(45vh, 50vh, 60vh);
+  // border-bottom: 0.5px solid var(--font-light);
   @include breakpoint('md') {
     //text-align: center;
   }
@@ -17,7 +17,7 @@
     position: absolute;
     right: 2vw;
     top: 5vw;
-    cursor: pointer;
+    cursor: url('/lens.svg'), auto;
     &__blur {
       position: absolute;
       background-color: #556B6A;
@@ -42,6 +42,7 @@
     color: var(--font-light);
     font-size: 20px;
     line-height: 26px;
+    margin-top: 15vh;
   }
 
   &__name {
@@ -64,12 +65,13 @@
   &__summary {
     margin-top: 20px;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 32px;
     letter-spacing: 0.035em;
     max-width: 700px;
     color: var(--font-dark2);
   }
   button {
     margin-top: clamp(30px, 50px, 6vw);
+    padding: 20px 50px;
   }
 }

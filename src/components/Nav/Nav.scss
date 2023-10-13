@@ -5,16 +5,21 @@
   align-items: baseline;
   padding: 10px 20px;
   width: calc(100vw - 40px);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  // box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   margin-top: -20px;
   background: #242424;
+  // background: var(--background);
   // position: relative;
 }
 .logo {
   margin-right: auto;
   transform: translateY(30%);
   cursor: pointer;
+  transition: margin-left 700ms ease-in-out;
+  &:hover {
+    margin-left: 10px
+  }
 }
 .nav-items {
   display: flex;
@@ -38,6 +43,7 @@
   height: 100vh;
   z-index: 100;
   background: #242424;
+  // background: var(--background);
   transition: right 0.5s ease-in-out;
   @include breakpoint('md') {
     display: flex;
@@ -109,9 +115,10 @@
    img {
      width: 25px;
      cursor: pointer;
-     transition: transform 0.5s ease-in-out;
+     transition: width 0.9s linear;
      &:hover {
-       transform: translateY(-20%);
+       animation: slide 900ms linear infinite alternate;
+       width: 35px;
      }
     }
   }
@@ -135,7 +142,7 @@
     transition: margin-bottom 0.5s ease-in-out;
     a {
       color: var(--font-light);
-      transition: color 0.5s ease-in-out;
+      transition: color 0.9s ease-in-out;
     }
   }
   p:hover {
@@ -170,6 +177,11 @@
 }
 
 @keyframes slide {
-  0% { transform: translateY(10%)}
-  100% { transform: translateY(0%)}
+  0% { transform: translateY(0%)}
+  100% { transform: translateY(25%)}
+}
+
+@keyframes slideSideways {
+  0% { transform: translateX(15%)}
+  100% { transform: translateX(0%)}
 }

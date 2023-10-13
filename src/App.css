@@ -3,7 +3,24 @@
 
 .App {
   position: relative;
-  width: calc(100vw - 5px);
+  width: calc(100vw - 10px);
+  margin: 0;
+  /* background: #1e1e1e !important; */
+  
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -o-backdrop-filter: blur(10px);
+  -ms-backdrop-filter: blur(10px); */
+}
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: -10px;
+  bottom: -20px;
+  background-color: #1e1e1e;
+  opacity: 0.9;
 }
 .content-wrapper {
   display: grid;

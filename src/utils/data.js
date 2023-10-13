@@ -16,10 +16,12 @@ export const hero = {
   greeting: 'Hi, my name is',
   fullname: 'Blessing Alfred',
   title: 'I am a frontend developer',
-  summary: `I'm a frontend developer with a passion for creating engaging 
-      and user-friendly digital experiences. I deliver high-quality products
-      that exceed user expectations using the latest web technologies. 
-      Currently, I’m focused on building accessible, human-centred products at Glover.`
+  summary: `A frontend developer with a passion for creating engaging 
+      and user-friendly digital experiences.`
+  // summary: `I'm a frontend developer with a passion for creating engaging 
+  //     and user-friendly digital experiences. I deliver high-quality products
+  //     that exceed user expectations using the latest web technologies. 
+  //     Currently, I’m focused on building accessible, human-centred products at Glover.`
 }
 
 export const about = {

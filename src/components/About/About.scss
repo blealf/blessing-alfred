@@ -1,7 +1,8 @@
 @import '../../main.scss';
 
 .about {
-  padding-top: 10vw;
+  padding-top: 9vw;
+  cursor: url('/cursor.svg'), auto;
 }
 .about-section {
   display: grid;
@@ -13,10 +14,11 @@
     @include breakpoint('md') {
       grid-column: 1 / 3;
       grid-row: 2 / 3;
+      max-width: 80%;
     }
     p {
       font-size: 16px;
-      line-height: 24px;
+      line-height: 32px;
       letter-spacing: 0.03em;
       padding-bottom: 10px;
     }
@@ -43,23 +45,23 @@
       grid-column: 1 / 3;
       grid-row: 1 / 2;
       margin: 0 auto;
+      margin-left: -1px;
     }
     img {
       position: relative;
       margin-top: 50px;
-      width: 300px;
-      height: 330px;
-      border-radius: 1px;
+      width: 280px;
+      border-radius: 4px;
       z-index: 1;
     }
     &::before {
       content: '';
       position: absolute;
-      top: 40px;
-      right: -10px;
-      width: 300px;
-      height: 330px;
-      border-radius: 1px;
+      top: 45px;
+      right: 3px;
+      width: 280px;
+      height: 300px;
+      border-radius: 4px;
       border: 1px solid var(--font-light);
     }
     &::after {
@@ -68,10 +70,10 @@
       left: 0;
       top: 0;
       right: 0;
-      width: 300px;
-      height: 330px;
+      width: 280px;
+      height: 300px;
       background: teal;
-      z-index: 99;
+      z-index: 2;
       opacity: 0.2;
       margin-top: 50px;
       border-radius: 1px;

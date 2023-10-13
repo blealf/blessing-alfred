@@ -39,10 +39,11 @@ function App() {
 
   return (
       <DataContext.Provider value={{email, socialIcons}}>
-        <div className="App">
-            <NavContainer>
-              <Nav resumeDownload={handleResumeDownload}/>
-            </NavContainer>
+      <div className="App">
+        <div className="mask"></div>
+          <NavContainer>
+            <Nav resumeDownload={handleResumeDownload}/>
+          </NavContainer>
           <ScrollButton />
           <SocialNav />
           <EmailNav />

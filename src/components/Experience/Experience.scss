@@ -1,6 +1,6 @@
 @import '../../main.scss';
 .experience {
-  padding-top: 10vw;
+  padding-top: 5vw;
   &__divider {
     display: grid;
     grid-template-columns: 150px 1fr;
@@ -63,7 +63,7 @@
     transition: color 0.5s, transform 0.5s ease-in-out;
 
     &:hover {
-      color: var(--font-light-alt);
+      color: var(--font-light);
       transform: translateY(-20%);
     }
   }
@@ -71,7 +71,7 @@
     border-left: 2px solid var(--font-light);
     border-bottom: 2px solid transparent;
     &:hover {
-      border-left: 1px solid var(--font-light-alt);
+      border-left: 2px solid var(--font-light);
     }
   }
   @include breakpoint('md') {

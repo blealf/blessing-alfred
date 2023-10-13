@@ -3,10 +3,10 @@ import styled from 'styled-components'
 
 const HeadingWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 20px;
 `
 
 const Title = styled.h1`
@@ -25,7 +25,7 @@ const Divider = styled.div`
 const Heading = ({ title, both }) => {
   return (
     <HeadingWrapper>
-      {both ? <Divider></Divider> : ''}
+      <Divider></Divider>
       <Title>{ title || 'Title.'}</Title>
       <Divider></Divider>
     </HeadingWrapper>
