@@ -41,14 +41,17 @@ export const about = {
       `I am proficient in a range of programming languages and tools:`
     ],
     skills: [
-        'JavaScript',
-        'HTML & CSS',
-        'Vue',
-        'Git',
-        'Figma',
-        'Typescript',
-        'React',
-        // 'Ruby on Rails'
+      'JavaScript',
+      'HTML & CSS',
+      'Vue',
+      'Git',
+      'Figma',
+      'Typescript',
+      'React',
+      'Next.js',
+      'Nuxt'
+      // 'Ruby on Rails',
+      // 'Node',
     ]
 }
 export const experiences = [
