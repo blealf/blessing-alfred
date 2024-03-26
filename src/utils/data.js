@@ -109,6 +109,16 @@ export const experiences = [
 
 export const work = [
   {
+    name: "WFlick Weather",
+    description: ` This responsive weather forecast application provides users with accurate 
+      and up-to-date weather information tailored to their location. With seamless responsiveness
+      across devices, from desktop to mobile, FlickWeather ensures you're always in the know.
+      about the latest weather conditions.`,
+    techs: ['JavaScript','Vue','Pinia','HTML & CSS'],
+    github: 'https://github.com/blealf/blessing-alfred',
+    link: 'https://flick-weather.netlify.app'
+  },
+  {
     name: "React Chess Game",
     description: `The Chess game displays a graphical user interface 
       with 64 squares arranged in an 8x8 grid. The game validates moves, 
