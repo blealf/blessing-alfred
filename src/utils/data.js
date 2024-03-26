@@ -109,7 +109,7 @@ export const experiences = [
 
 export const work = [
   {
-    name: "WFlick Weather",
+    name: "Flick Weather",
     description: ` This responsive weather forecast application provides users with accurate 
       and up-to-date weather information tailored to their location. With seamless responsiveness
       across devices, from desktop to mobile, FlickWeather ensures you're always in the know.
