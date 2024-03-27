@@ -16,7 +16,7 @@ const Footer = () => {
                 })}
             </div>
             <p>Developed by Blessing Alfred</p>
-            <p>© 2023 <a href={`mailto:${data.email}`}>{data.email}</a></p>
+            <p>© 2024 <a href={`mailto:${data.email}`}>{data.email}</a></p>
         </div>
     )
 }
