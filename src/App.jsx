@@ -11,8 +11,9 @@ import Work from './components/Work/Work'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import ScrollButton from "./components/Nav/ScrollButton"
-import resume from './assets/document/Blessing_Alfred_Resume.pdf'
+import resume from './assets/document/Blessing_Alfred_CV_pp.pdf'
 import { email, socialIcons } from "./utils/data.js"
+// import resume from './assets/document/Blessing_Alfred_Resume.pdf'
 
 const NavContainer = styled.div`
   position: relative;
