@@ -1,0 +1,25 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+    "source.sortMembers": true,
+    "source.fixAll.eslint": "never"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.format.enable": false,
+  "editor.formatOnSave": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
+
+
+// {
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll": true,
+//     "source.organizeImports": true,
+//     "source.sortMembers": true,
+//     "source.fixAll.eslint": false
+//   },
+//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+//   "eslint.format.enable": false,
+//   "editor.formatOnSave": true
+// }
