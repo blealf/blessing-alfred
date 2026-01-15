@@ -1,8 +1,7 @@
-import React from 'react'
-import Heading from '../Heading'
-import './About.scss'
 import blessing from '../../assets/blessing.png'
 import { about } from '../../utils/data.js'
+import Heading from '../Heading'
+import './About.scss'
 
 const About = () => {
   return (
@@ -12,14 +11,14 @@ const About = () => {
         <div className="about-section__left">
           {about.summary.map((text, index) => {
             return (
-                <p key={index}>{text}</p>
+              <p key={index}>{text}</p>
             )
           })}
           <div className="skills">
             <ul>
               {about.skills.map((skill, index) => {
                 return (
-                    <li key={index}>{skill}</li>
+                  <li key={index}>{skill}</li>
                 )
               })}
             </ul>

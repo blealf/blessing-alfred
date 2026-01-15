@@ -22,7 +22,7 @@ const Divider = styled.div`
   background: #15E1D5;
 `
 
-const Heading = ({ title, both }) => {
+const Heading = ({ title, both }: { title?: string, both?: boolean}) => {
   return (
     <HeadingWrapper>
       <Divider></Divider>

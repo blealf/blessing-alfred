@@ -1,6 +1,6 @@
 @import '../../main.scss';
 .nav-wrapper {
-  z-index: 5;
+  z-index: 99 !important;
   display: flex;
   align-items: baseline;
   padding: 10px 20px;
@@ -140,12 +140,14 @@
     margin-bottom: 110px;
     cursor: pointer;
     transition: margin-bottom 0.5s ease-in-out;
+    color: var(--font-light);
     a {
       color: var(--font-light);
       transition: color 0.9s ease-in-out;
     }
   }
   p:hover {
+    color: var(--font-light-alt);
     a {
       color: var(--font-light-alt);
     }

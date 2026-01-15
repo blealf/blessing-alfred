@@ -1,9 +1,11 @@
-import './Footer.scss'
-import React, {useContext} from "react";
-import {DataContext} from "../../App.jsx";
+import { useDataContext } from '../../contexts/DataContext';
+import useCopyToClipboard from '../../hooks/useCopyToClipboard';
+import './Footer.scss';
 
 const Footer = () => {
-    const data = useContext(DataContext)
+    const data = useDataContext()
+    const { copyToClipboard } = useCopyToClipboard()
+    
     return (
         <div className="footer">
             <div className="social">
@@ -15,8 +17,8 @@ const Footer = () => {
                     )
                 })}
             </div>
-            <p>Developed by Blessing Alfred</p>
-            <p>© 2024 <a href={`mailto:${data.email}`}>{data.email}</a></p>
+            <p>By Blessing Alfred</p>
+            <p onClick={() => copyToClipboard(data.email)}>© 2026 <span className="email">{data.email}</span></p>
         </div>
     )
 }

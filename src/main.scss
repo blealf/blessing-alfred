@@ -4,32 +4,30 @@ $md: 768px;
 $lg: 900px;
 $xl: 1024px;
 
-
 @mixin breakpoint($value) {
-
-  @if $value == "xs" {
+  @if $value == 'xs' {
     @media screen and (max-width: $xs) {
-      @content
+      @content;
     }
   }
-  @if $value == "sm" {
+  @if $value == 'sm' {
     @media screen and (max-width: $sm) {
-      @content
+      @content;
     }
   }
-  @if $value == "md" {
+  @if $value == 'md' {
     @media screen and (max-width: $md) {
-      @content
+      @content;
     }
   }
-  @if $value == "lg" {
+  @if $value == 'lg' {
     @media screen and (max-width: $lg) {
-      @content
+      @content;
     }
   }
-  @if $value == "xl" {
+  @if $value == 'xl' {
     @media screen and (max-width: $xl) {
-      @content
+      @content;
     }
   }
 }

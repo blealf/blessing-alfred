@@ -1,14 +1,15 @@
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import VanillaTilt from 'vanilla-tilt'
-import './Hero.scss'
 import mac from '../../assets/hero/mac.svg'
-import {hero} from '../../utils/data.js'
+import { hero } from '../../utils/data.js'
+import './Hero.scss'
 
-const Hero = ({ resumeDownload }) => {
+const Hero = ({ resumeDownload }: { resumeDownload: () => void }) => {
   const { greeting, fullname, title, summary } = hero
-  const macHero = useRef()
+  const macHero = useRef(null)
   
   useEffect(() => {
+    if (!macHero.current) return
     VanillaTilt.init(macHero.current, {
       max: 30,
       speed: 800,
@@ -16,6 +17,7 @@ const Hero = ({ resumeDownload }) => {
       perspective: 500
     });
     () => {
+      // @ts-expect-error macHero is not null
       macHero.vanillaTilt.destroy();
     }
   }, [])

@@ -1,25 +1,49 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true,
-    "source.sortMembers": true,
-    "source.fixAll.eslint": "never"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.format.enable": false,
+  // Format on save
   "editor.formatOnSave": true,
-  "typescript.tsdk": "node_modules/typescript/lib"
+
+  // Set Prettier as default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Enable format on save for specific languages
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // ESLint configuration
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.format.enable": false,
+
+  // Prettier configuration
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false
 }
-
-
-// {
-//   "editor.codeActionsOnSave": {
-//     "source.fixAll": true,
-//     "source.organizeImports": true,
-//     "source.sortMembers": true,
-//     "source.fixAll.eslint": false
-//   },
-//   "editor.defaultFormatter": "esbenp.prettier-vscode",
-//   "eslint.format.enable": false,
-//   "editor.formatOnSave": true
-// }

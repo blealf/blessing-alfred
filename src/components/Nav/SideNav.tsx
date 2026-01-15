@@ -1,15 +1,17 @@
-import React, {useContext} from 'react'
-import {DataContext} from "../../App.jsx";
+import { useDataContext } from '../../contexts/DataContext.js';
+import useCopyToClipboard from '../../hooks/useCopyToClipboard.js';
 
 const SideNav = () => {
-    const data = useContext(DataContext)
+  const data = useDataContext()
+  const { copyToClipboard } = useCopyToClipboard()
+
   return (
     <div className="side-nav">
       <div className="side-nav__left">
         <div className="nav-social">
           {data.socialIcons.map(item => {
             return (
-              <a href="https://google.com" target="_blank">
+              <a href={item.link} target="_blank">
                 <img src={item.path} alt={item.name} />
               </a>
             )
@@ -18,7 +20,10 @@ const SideNav = () => {
         </div>
       </div>
       <div className="side-nav__right">
-        <p><a href={`mailto:${data.email}`}>{data.email}</a></p>
+        <p onClick={() => copyToClipboard(data.email)}>
+          {data.email}
+          {/* <a href={`mailto:${data.email}`}>{data.email}</a> */}
+        </p>
         <div className="vertical-divider"></div>
       </div>
     </div>

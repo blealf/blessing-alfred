@@ -43,7 +43,6 @@
 .company-wrapper {
   display: flex;
   @include breakpoint('md') {
-    display: flex;
     overflow: scroll;
   }
 }

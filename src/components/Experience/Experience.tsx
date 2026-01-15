@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { experiences } from '../../utils/data'
 import Heading from '../Heading'
 import Company from './Company'
 import './Experience.scss'
-import { experiences } from '../../utils/data'
 
 const Experience = () => {
-  const companies = experiences.map(item => item.shortCompanyName)
+  const companies = experiences?.map(item => item.shortCompanyName)
   
   const [activeCompany, setActiveCompany] = useState(companies[0])
-  const [experience, setExperience] = useState(experiences[0])
+  const [experience, setExperience] = useState<any>(experiences[0])
 
   useEffect(() => {
     setCompany()
@@ -27,9 +27,9 @@ const Experience = () => {
       <div className="experience__divider">
         <div className="company-wrapper">
           <Company
-              companies={companies}
-              active={activeCompany}
-              setActive={setActiveCompany}
+            companies={companies}
+            active={activeCompany}
+            setActive={setActiveCompany}
           />
         </div>
         <div className="experience__details">
@@ -39,7 +39,7 @@ const Experience = () => {
           </h2>
           <p>{experience.date}</p>
           <ul>
-            {experience.responsibilities.map(responsibility => {
+            {experience.responsibilities.map((responsibility: string) => {
               return (<li key={responsibility}>{responsibility}</li>)
             })}
           </ul>
