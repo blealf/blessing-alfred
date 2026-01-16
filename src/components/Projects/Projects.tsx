@@ -54,7 +54,7 @@ const Work = () => {
                       objectFit: 'contain' 
                     }} />
                   <button 
-                    className={`absolute bottom-2 ${willFloatRight(index) ? 'left-2' : 'right-2'} z-[99]`}
+                    className={`absolute bottom-2 ${willFloatRight(index) ? 'left-2' : 'right-2'} z-[999]`}
                     onClick={() => handleOpenModal(project)}
                   >
                     <Maximize className="maximize-icon" />

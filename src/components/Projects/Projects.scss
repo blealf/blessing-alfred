@@ -1,3 +1,5 @@
+@import '../../main.scss';
+
 .work {
   padding-top: 5vw;
 
@@ -6,6 +8,11 @@
     position: relative;
     margin-top: 20px;
     margin-bottom: 100px;
+    @include breakpoint('md') {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
 
     .project-title {
       font-size: 24px;
@@ -16,14 +23,21 @@
       min-height: 300px;
       background: #3f3f3f2d;
       opacity: 0.8;
-      // background: transparent;
       border-radius: 5px;
       box-shadow: 3px 4px 4px 2px var(--bg-secondary);
+      @include breakpoint('md') {
+        width: 100%;
+      }
     }
     .float {
       display: flex;
       flex-direction: column;
       position: absolute;
+
+      @include breakpoint('md') {
+        position: relative;
+      }
+
       p { margin: 0; }
       h3 {
         margin-top: 10px;

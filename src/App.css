@@ -13,13 +13,13 @@
   -webkit-backdrop-filter: blur(10px);
   -moz-backdrop-filter: blur(10px);
   -o-backdrop-filter: blur(10px);
-  -ms-backdrop-filter: blur(10px); */
+  -ms-backdrop-filter: blur(10px); */ 
 }
 .mask {
   position: fixed;
   left: 0;
   top: 0;
-  right: 0px;
+  right: 0;
   bottom: 0;
   background-color: #1e1e1e;
   opacity: 0.9;
@@ -28,6 +28,12 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 8vw 8vw 0 8vw;
-  display: block;
+  flex-direction: column;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 6vw 6vw 0 6vw;
+    margin: 0 0 0 12px;
+  }
 }

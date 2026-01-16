@@ -175,7 +175,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 90;
+  z-index: 9;
   p {
     transform: rotate(-90deg);
     letter-spacing: 3px;
@@ -217,6 +217,7 @@
 @include breakpoint('xl') {
   .email-nav, .social-nav {
     opacity: 0;
+    display: none;
   }
 }
 

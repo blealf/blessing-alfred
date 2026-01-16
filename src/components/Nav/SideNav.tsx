@@ -12,7 +12,7 @@ const SideNav = () => {
           {data.socialIcons.map(item => {
             return (
               <a href={item.link} target="_blank">
-                <img src={item.path} alt={item.name} />
+                <item.path />
               </a>
             )
           })}
@@ -22,7 +22,6 @@ const SideNav = () => {
       <div className="side-nav__right">
         <p onClick={() => copyToClipboard(data.email)}>
           {data.email}
-          {/* <a href={`mailto:${data.email}`}>{data.email}</a> */}
         </p>
         <div className="vertical-divider"></div>
       </div>
