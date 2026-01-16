@@ -18,7 +18,7 @@
       padding: 5px;
       margin-bottom: -10px;
       font-size: 24px;
-      line-height: 32px;
+      // line-height: 32px;
       span {
         font-size: 16px;
         line-height: 21px;
@@ -69,6 +69,7 @@
   .active-company {
     border-left: 2px solid var(--teal-primary);
     border-bottom: 2px solid transparent;
+    color: var(--accent-gold);
     &:hover {
       border-left: 2px solid var(--teal-primary);
     }

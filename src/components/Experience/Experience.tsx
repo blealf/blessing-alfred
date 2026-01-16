@@ -37,7 +37,7 @@ const Experience = () => {
             {experience.title}
             <span>{` @ ${experience.company}`} </span>
           </h2>
-          <p>{experience.date}</p>
+          <p className="ml-1 mt-1">{experience.date}</p>
           <ul>
             {experience.responsibilities.map((responsibility: string) => {
               return (<li key={responsibility}>{responsibility}</li>)
