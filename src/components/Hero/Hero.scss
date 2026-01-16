@@ -2,7 +2,7 @@
 .hero {
   padding-top: 15vw;
   // min-height: clamp(45vh, 50vh, 60vh);
-  // border-bottom: 0.5px solid var(--font-light);
+  // border-bottom: 0.5px solid var(--teal-primary);
   @include breakpoint('md') {
     // text-align: center;
   }
@@ -39,7 +39,7 @@
   }
 
   &__intro {
-    color: var(--font-light);
+    color: var(--teal-primary);
     font-size: 20px;
     line-height: 26px;
     margin-top: 15vh;
@@ -59,7 +59,7 @@
     font-size: 40px;
     font-weight: 800;
     line-height: 53px;
-    color: var(--font-dark1);
+    color: var(--text-primary);
   }
 
   &__summary {
@@ -68,10 +68,17 @@
     line-height: 32px;
     letter-spacing: 0.035em;
     max-width: 700px;
-    color: var(--font-dark2);
+    color: var(--text-muted);
   }
   button {
     margin-top: clamp(30px, 50px, 6vw);
-    padding: 20px 50px;
+    padding: 15px 35px;
+    box-shadow: 1px 1px 5px var(--accent-purple);
+    transition: color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    &:hover {
+      color: var(--accent-green);
+      border-color: var(--accent-gold);
+      box-shadow: 1px 1px 5px var(--accent-gold);
+    }
   }
 }

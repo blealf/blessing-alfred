@@ -22,6 +22,15 @@ const Hero = ({ resumeDownload }: { resumeDownload: () => void }) => {
     }
   }, [])
 
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id)
+    if (!element) return
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: 'smooth',
+    })
+}
+
   return (
     <div className="hero">
       <div className="hero__mac" ref={macHero}>
@@ -33,7 +42,10 @@ const Hero = ({ resumeDownload }: { resumeDownload: () => void }) => {
       <div className="hero__title">{title}</div>
       <p className="hero__summary">{summary}
       </p>
-      <button onClick={() => resumeDownload()}>Check my Resume</button>
+      <div className="flex gap-4">
+        <button onClick={() => resumeDownload()}>Check my Resume</button>
+        <button onClick={() => handleScroll('projects')}> See Projects</button>
+      </div>
     </div>
   )
 }

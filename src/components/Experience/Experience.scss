@@ -22,20 +22,20 @@
       span {
         font-size: 16px;
         line-height: 21px;
-        color: var(--font-light);
+        color: var(--teal-primary);
       }
     }
     p {
       font-size: 16px;
       line-height: 21px;
-      color: var(--font-dark1);
+      color: var(--text-primary);
       margin-bottom: 25px;
     }
     li {
       margin-bottom: 15px;
       font-size: 16px;
       line-height: 25px;
-      color: var(--font-dark2);
+      color: var(--text-muted);
     }
   }
 }
@@ -62,15 +62,15 @@
     transition: color 0.5s, transform 0.5s ease-in-out;
 
     &:hover {
-      color: var(--font-light);
+      color: var(--teal-primary);
       transform: translateY(-20%);
     }
   }
   .active-company {
-    border-left: 2px solid var(--font-light);
+    border-left: 2px solid var(--teal-primary);
     border-bottom: 2px solid transparent;
     &:hover {
-      border-left: 2px solid var(--font-light);
+      border-left: 2px solid var(--teal-primary);
     }
   }
   @include breakpoint('md') {
@@ -83,7 +83,7 @@
     }
     .active-company {
       border-left: none;
-      border-bottom: 2px solid var(--font-light);
+      border-bottom: 2px solid var(--teal-primary);
       &:hover {
         border-left: none;
       }

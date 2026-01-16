@@ -2,30 +2,23 @@ import 'swiper/css/bundle';
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-const Carousel = ({ photos }: { photos: string[]}) => {
+const Carousel = ({ photos, imageStyle }: { photos: string[], imageStyle: any}) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={1}
       navigation
-      pagination={{ clickable: true }}
+      // pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => {/* console.log('slide change') */}}
+      onSwiper={(swiper) => {/* console.log(swiper) */}}
     >
       {photos?.map((photo) => (
         <SwiperSlide>
           <img
             src={photo}
-            alt="" style={{ 
-              maxWidth: '1115px', 
-              maxHeight: '300px', 
-              width: '100%', 
-              minHeight: '300px', 
-              marginTop: '5px', 
-              objectFit: 'contain' 
-            }}
+            alt="" style={imageStyle}
           />
         </SwiperSlide>
       ))}

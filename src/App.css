@@ -1,11 +1,13 @@
-#root {
-}
 
 .App {
   position: relative;
-  width: calc(100vw - 10px);
-  margin: 0;
-  /* background: #1e1e1e !important; */
+  max-width: 100%;
+  width: calc(100vw - 24px);
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  scroll-behavior: smooth;
+  scrollbark-width: thin;
+  /* background: linear-gradient(145deg, #121212, #1A1A1A); */
 
   /* backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -14,17 +16,18 @@
   -ms-backdrop-filter: blur(10px); */
 }
 .mask {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
-  right: -10px;
-  bottom: -20px;
+  right: 0px;
+  bottom: 0;
   background-color: #1e1e1e;
   opacity: 0.9;
 }
 .content-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8vw 8vw 0 8vw;
+  display: block;
+  position: relative;
 }

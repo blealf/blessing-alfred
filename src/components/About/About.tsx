@@ -1,4 +1,6 @@
 import blessing from '../../assets/blessing.png'
+import blessing1 from '../../assets/blessing1.png'
+import blessing2 from '../../assets/blessing2.png'
 import { about } from '../../utils/data.js'
 import Heading from '../Heading'
 import './About.scss'

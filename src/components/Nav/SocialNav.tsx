@@ -6,10 +6,10 @@ const SocialNav = () => {
   return (
     <div className="social-nav">
       <div className="nav-social">
-        {data.socialIcons.map(item => {
+        {data.socialIcons.map((item: any) => {
           return (
             <a href={item.link} target="_blank" key={item.name}>
-              <img src={item.path} alt={item.name} />
+             <item.path className="social-icon" />
             </a>
           )
         })}

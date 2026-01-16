@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Acme&family=Bubblegum+Sans&family=Finger+Paint&family=Fresca&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Yantramanav:wght@100;300;400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   /* font-family: "Jetbrains Mono", Inter, system-ui, Avenir, Helvetica, Arial,
     sans-serif; */
@@ -17,7 +21,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  /* background-color: #1e1e1e; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,17 +28,32 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --background: #130f17;
-  --font-light: #15e1d5;
-  --font-light-alt: #646cff;
-  --font-dark1: #b1b1b1;
-  --font-dark2: #999999;
+  /* Override toastify color */
   --toastify-color-success: #15e1d5;
+  
+  --bg-primary: #130f17;
+  --bg-secondary: #242424;
+  --teal-primary: #15e1d5;
+  --text-primary: #b1b1b1;
+  --text-muted: #999999;
+  
+  --accent-purple: #646cff;
+  --accent-gold: #f5c16c;
+  --accent-blue: #5da9e9;
+  --accent-green: #4cafbc;
+  --accent-danger: #e57373
+
+}
+
+html, body, *, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--accent-purple, #646cff);
   text-decoration: inherit;
 }
 a:hover {
@@ -56,18 +74,27 @@ h1 {
 
 button {
   border-radius: 5px;
-  border: 1px solid var(--font-light);
+  border: 1px solid var(--teal-primary);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+  letter-spacing: 1px;
   background-color: #1a1a1a;
-  cursor: pointer;
   transition: border-color 0.25s;
-  text-transform: upperCase;
+  text-transform: uppercase;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: var(--text-primary);
+  box-shadow: 1px 1px 5px var(--accent-purple);
+  transition: color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
+
 button:hover {
-  border-color: #646cff;
+  color: var(--accent-green);
+  border-color: var(--accent-gold);
+  box-shadow: 1px 1px 5px var(--accent-gold);
 }
 button:focus,
 button:focus-visible {

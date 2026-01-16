@@ -1,7 +1,7 @@
-import github from '../assets/nav/github.svg';
-import instagram from '../assets/nav/instagram.svg';
-import linkedin from '../assets/nav/linkedin.svg';
-import twitter from '../assets/nav/twitter.svg';
+import github from '../assets/nav/github.svg?react';
+import instagram from '../assets/nav/instagram.svg?react';
+import linkedin from '../assets/nav/linkedin.svg?react';
+import twitter from '../assets/nav/twitter.svg?react';
 
 import AppleCloneImg from '../assets/work/apple-clone.png';
 import Eventsdashboard1 from '../assets/work/events-dashboard1.png';
