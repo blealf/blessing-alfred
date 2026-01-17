@@ -39,7 +39,7 @@ const Work = () => {
         {work.map((project: WorkInterface, index: number) => {
           return (
             <div key={project.link} className="work_wrapper">
-              <div className="relative image" style={{
+              <div className={`relative image ${!project.photos?.length ? 'hidden md:block' : ''}`} style={{
                 marginLeft: willFloatRight(index) ? '' : 'auto'
               }}>
                 {!!project.photos?.length && <>
@@ -54,7 +54,7 @@ const Work = () => {
                       objectFit: 'contain' 
                     }} />
                   <button 
-                    className={`absolute bottom-2 ${willFloatRight(index) ? 'left-2' : 'right-2'} z-[999]`}
+                    className={`hidden lg:block absolute bottom-2 ${willFloatRight(index) ? 'left-2' : 'right-2'} z-[999]`}
                     onClick={() => handleOpenModal(project)}
                   >
                     <Maximize className="maximize-icon" />
