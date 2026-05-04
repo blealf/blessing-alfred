@@ -25,11 +25,11 @@ function App() {
   const [activeId, setActiveId] = useState<string>('hero');
 
   const sections = [
-    { id: "hero", path: Video2 },
-    { id: "about", path: Video1 },
-    { id: "experience", path: Video4 },
-    { id: "projects", path: Video5 },
-    { id: "contact", path: Video3 },
+    { id: 'hero', path: Video2 },
+    { id: 'about', path: Video1 },
+    { id: 'experience', path: Video4 },
+    { id: 'projects', path: Video5 },
+    { id: 'contact', path: Video3 },
   ];
 
   useEffect(() => {
@@ -62,7 +62,7 @@ function App() {
       }
     });
   }, [sections, activeId]);
-  
+
   const handleResumeDownload = () => {
     setTimeout(() => {
       window.open(resume, '_blank');
@@ -73,7 +73,7 @@ function App() {
     <DataContextProvider>
       <main className="App">
         <div className="mask"></div>
-        <video 
+        {/*<video 
           key={activeId}
           autoPlay 
           loop 
@@ -83,7 +83,7 @@ function App() {
         >
           <source src={sections.find(item => item.id === activeId)!.path} type="video/mp4" />
           ...
-        </video>
+        </video>*/}
         <ToastContainer theme="dark" />
         <div className="relative">
           <Nav resumeDownload={handleResumeDownload} />
